@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 // Components
-import HeroKommunikation from "@/components/kommunikation/herokommunikation";
+import HeroKommunikation from "@/components/kommunikation/heroKommunikation";
 import KommunikationServices from "@/components/kommunikation/kommunikationServices";
 
 const Kommunikation = () => {

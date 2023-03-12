@@ -29,10 +29,10 @@ const Hero = () => {
         </div>
 
         <div className="w-full flex items-center justify-start gap-5">
-          <ButtonBlack className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+          <ButtonBlack link="kontakta_oss" className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
             KONTAKTA OSS
           </ButtonBlack>
-          <ButtonWhite className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+          <ButtonWhite link="om_Oss" className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
             OM OSS
           </ButtonWhite>
         </div>

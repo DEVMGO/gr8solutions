@@ -27,13 +27,13 @@ const Services = () => {
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">
         <CardServices
-          icon={<UtökadTelefoni className="3xl:w-14 w-10 3xl:h-auto h-12 " />}
+          icon={<UtökadTelefoni className="3xl:w-14 w-10 3xl:h-auto h-12 [&>path]:fill-blueCF" />}
         />
-        <CardServices icon={<Kommunikation className="3xl:w-14 w-10" />} />
-        <CardServices icon={<ITTjänster className="3xl:w-14 w-10" />} />
-        <CardServices icon={<OfficeTjänster className="3xl:w-14 w-10" />} />
-        <CardServices icon={<Skrivarelösningar className="3xl:w-14 w-10" />} />
-        <CardServices icon={<GpsAndKörjournal className="3xl:w-14 w-10" />} />
+        <CardServices icon={<Kommunikation className="3xl:w-14 w-10 [&>path]:fill-blueCF" />} />
+        <CardServices icon={<ITTjänster className="3xl:w-14 w-10 [&>path]:fill-blueCF" />} />
+        <CardServices icon={<OfficeTjänster className="3xl:w-14 w-10 [&>path]:fill-blueCF" />} />
+        <CardServices icon={<Skrivarelösningar className="3xl:w-14 w-10 [&>path]:fill-blueCF" />} />
+        <CardServices icon={<GpsAndKörjournal className="3xl:w-14 w-10 [&>path]:fill-blueCF" />} />
       </div>
       <ButtonBlack className="w-full md:hidden block h-12 text-lg rounded-3xl mt-12">
         SE VÅRA TJÄNSTER

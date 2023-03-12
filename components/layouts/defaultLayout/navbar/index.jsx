@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 // images
-import Logo from "@/public/assets/images/logo.svg";
+import Logo from "@/public/assets/images/logo.png";
 // icons
 import { IoClose } from "react-icons/io5";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -70,7 +70,7 @@ const Navbar = () => {
     },
     {
       title: "KONTAKTA OSS",
-      url: "/kontakt-oss",
+      url: "/kontakta_oss",
       children: [],
     },
   ];
@@ -86,7 +86,7 @@ const Navbar = () => {
               <Image
                 src={Logo}
                 alt="gr8 solutions"
-                className="3xl:w-28 w-20 3xl:h-14 h-10"
+                className="3xl:w-44 md:w-36 3xl:h-12 h-10"
               />
             </Link>
           </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
 
                 {item.children.length > 0 && (
                   <ul
-                    className={`absolute w-full min-w-max z-40 rounded-md bg-white border border-gray-300 flex items-start justify-center flex-col overflow-hidden ${
+                    className={`absolute w-full min-w-max z-40 bg-white flex items-start justify-center flex-col overflow-hidden ${
                       showChildren === index
                         ? "max-h-screen"
                         : " max-h-0 p-0 opacity-0"
@@ -119,7 +119,7 @@ const Navbar = () => {
                     {item.children.map((itm, idx) => (
                       <li
                         key={idx}
-                        className="w-full flex items-center justify-start rounded hover:bg-gray-100 p-3"
+                        className="w-full flex items-center justify-start rounded hover:bg-blueCF hover:bg-opacity-40 p-3"
                       >
                         <Link
                           href={itm.url}
@@ -208,7 +208,7 @@ const Navbar = () => {
                   </Link>
                   {item.children.length > 0 && (
                     <ul
-                      className={`w-full min-w-max z-40 rounded-md flex items-start justify-center flex-col overflow-hidden ${
+                      className={`w-full min-w-max z-40 flex items-start justify-center flex-col overflow-hidden ${
                         showChildren === index
                           ? "max-h-screen"
                           : " max-h-0 p-0 opacity-0"

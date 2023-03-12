@@ -87,7 +87,7 @@ const Footer = () => {
                 "When good is not enough"
               </h4>
             </div>
-            <div className="flex items-start justify-start flex-col 3xl:mt-24 md:mt-16 mt-14">
+            <div className="flex items-start justify-start flex-col 3xl:mt-24 md:mt-16 mt-14 3xl:gap-5 gap-4">
               <div className="flex items-center justify-center 3xl:gap-5 gap-4">
                 <LocationIcon className="[&>path]:stroke-black" />
                 <p className="3xl:text-2xl md:text-xl text-base font-light text-black">
@@ -121,7 +121,7 @@ const Footer = () => {
               </h4>
             </div>
             <div className="flex items-start justify-between md:gap-16 gap-14 lg:mt-0 mt-14">
-              <div className="flex items-start justify-start flex-col">
+              <div className="flex items-start justify-start flex-col 3xl:gap-7 md:gap-5 gap-4">
                 <h4 className="3xl:text-2xl md:text-xl text-lg text-black font-medium">
                   SIDOR
                 </h4>
@@ -135,7 +135,7 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <div className="flex items-start justify-start flex-col">
+              <div className="flex items-start justify-start flex-col 3xl:gap-7 md:gap-5 gap-4">
                 <h4 className="3xl:text-2xl md:text-xl text-lg text-black font-medium">
                   TJÄNSTER
                 </h4>
@@ -158,13 +158,13 @@ const Footer = () => {
             © 2022-23. Alla rättigheter förbehållna
           </p>
           <div className="flex items-center justify-center 3xl:gap-5 gap-4 md:order-2 order-1">
-            <a className="w-12 h-12 bg-black rounded-full text-2xl text-white flex items-center justify-center">
+            <a className="w-12 h-12 bg-blue44 rounded-full text-2xl text-white flex items-center justify-center">
               <BsInstagram />
             </a>
-            <a className="w-12 h-12 bg-black rounded-full text-2xl text-white flex items-center justify-center">
+            <a className="w-12 h-12 bg-blue44 rounded-full text-2xl text-white flex items-center justify-center">
               <FaFacebookF />
             </a>
-            <a className="w-12 h-12 bg-black rounded-full text-2xl text-white flex items-center justify-center">
+            <a className="w-12 h-12 bg-blue44 rounded-full text-2xl text-white flex items-center justify-center">
               <FaLinkedinIn />
             </a>
           </div>

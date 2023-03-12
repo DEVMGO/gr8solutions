@@ -13,7 +13,7 @@ const DefaultLayout = (props) => {
       <div
         className={`${
           pathname === "/" && style.home
-        } w-full flex items-start justify-center relative before:absolute before:w-full before:h-[9%] before:z-10 bg-white`}
+        } w-full flex items-start justify-center relative before:absolute before:w-full before:h-[9%] before:z-10 after:absolute after:w-full after:h-[9%] after:z-10 bg-white`}
       >
         <div
           className={`w-full max-w-[3000px] flex items-center justify-start flex-col overflow-hidden z-20`}

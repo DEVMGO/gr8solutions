@@ -21,7 +21,7 @@ const ITServices = () => {
 
       <div className="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 3xl:mt-24 md:mt-20 mt-14">
         <CardService
-          icon={<SecurityIcon />}
+          icon={<SecurityIcon className="[&>path]:fill-blueCF" />}
           bigTitle="SÄKERHET"
           title="Skydda din data och ditt företag mot cyberhot"
           description="Våra branschkunniga partners hjälper dig att sätta upp brandväggar och antivirusprogram, samt att utbilda dina anställda i säkerhet och goda datavetenskapsvanor. Vi ser till att ditt företag är skyddat mot olika typer av cyberhot, så att du kan känna dig trygg i att dina data är säkra."
@@ -34,7 +34,7 @@ const ITServices = () => {
           />
         </div>
         <CardService
-          icon={<CloudBasedIcon />}
+          icon={<CloudBasedIcon className="[&>path]:fill-blueCF" />}
           bigTitle="MOLNBASERAD IT"
           title="Uppdaterad, säker och tillgänglig IT för ditt företag"
           description="GR8 Solutions hjälper dig att migrera till en molnbaserad IT-miljö. Det innebär att dina data och program lagras och körs på externa servrar som är lättåtkomliga från alla dina enheter. Detta ger dig en högre flexibilitet och tillgänglighet, samtidigt som det gör din IT mer säker och enkel att hantera."
@@ -47,7 +47,7 @@ const ITServices = () => {
           />
         </div>
         <CardService
-          icon={<SupportIcon />}
+          icon={<SupportIcon className="[&>path]:fill-blueCF" />}
           bigTitle="IT-SUPPORT"
           title="Snabb och professionell hjälp när det behövs"
           description="GR8 Solutions erbjuder IT-support för ditt företag. Vi har ett team av erfarna tekniker som kan hjälpa dig med allt från enkla problemlösningar till mer avancerade frågor. Vårt mål är att hjälpa dig att hålla din IT igång så att du kan fokusera på att driva ditt företag."
@@ -60,7 +60,7 @@ const ITServices = () => {
           />
         </div>
         <CardService
-          icon={<SwitcheIcon />}
+          icon={<SwitcheIcon className="[&>path]:fill-blueCF" />}
           bigTitle="VÄXLAR OCH TELEFONI"
           title="Enkel och effektiv kommunikation för ditt företag"
           description="GR8 Solutions erbjuder installation och drift av växlar för ditt företag. Vi ser till att växeln är anpassad efter dina specifika behov och att den fungerar exakt som önskat. Vi samarbetar även med ledande operatörer för att erbjuda dig ett brett utbud av telefonitjänster."

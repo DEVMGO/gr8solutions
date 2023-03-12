@@ -22,13 +22,13 @@ const OfficeTjansterServices = () => {
 
       <div className="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 3xl:mt-24 md:mt-20 mt-14">
         <CardService
-          icon={<PrintingIcon />}
+          icon={<PrintingIcon className="[&>path]:fill-blueCF" />}
           bigTitle="SKRIVARELÖSNINGAR"
           title="På det moderna, papperslösa kontoret, skrivs det ut mer än någonsin "
           description=" Det är kostsamt både för företaget och för miljön. Därför är det extra viktigt att ni på företaget tar kontroll över hur ni hanterar utskrifter. GR8 levererar inte bara den mest miljövänliga hårdvaran som sänker avfall och energiförbrukning, vi löser hela er skrivarstruktur, från behovsanalys till installation och support."
         />
         <CardService
-          icon={<DocumentIcon />}
+          icon={<DocumentIcon className="[&>path]:fill-blueCF" />}
           bigTitle="DOKUMENTHANTERING "
           title="Effektiv hantering av dina viktiga dokument"
           description="Vi erbjuder professionella tjänster för dokumenthantering som hjälper dig att hålla ordning på dina dokument och data. Vi kan hjälpa dig med allt från skanning och indexering till lagring och säkerhetskopiering. Våra tjänster gör det enkelt för dig att hitta och dela information med dina medarbetare och kunder."
@@ -48,19 +48,19 @@ const OfficeTjansterServices = () => {
           />
         </div>
         <CardService
-          icon={<LogBookIcon />}
+          icon={<LogBookIcon className="[&>path]:fill-blueCF" />}
           bigTitle="ELEKTRONISKA KÖRJOURNALER"
           title="Öka effektiviteten med elektroniska körjournaler"
           description="Uppfyll skatteverkets dokumentationskrav, samtidigt som ni sparar både tid och pengar! Med elektroniska körjournaler registreras alla resor automatiskt med hjälp av en GPS-enhet installerat i fordonet. Automatisk tidsstyrning registrerar körningarna som tjänste- respektive privatresor.  Resans typ kan även ändras manuellt i efterhand."
         />
         <CardService
-          icon={<EmailIcon />}
+          icon={<EmailIcon className="[&>path]:fill-blueCF" />}
           bigTitle="E-POSTHANTERING"
           title="Säker lagring och enkel delning av information"
           description="Vår e-posthanteringstjänst hjälper dig att hålla kontroll över din inkorg och hantera e-postmeddelanden på ett effektivt sätt. Vi kan hjälpa dig med allt från konfigurering av e-postkonton till automatisk hantering av spam och skräppost."
         />
         <CardService
-          icon={<CalendarIcon />}
+          icon={<CalendarIcon className="[&>path]:fill-blueCF" />}
           bigTitle="KALENDERHANTERING"
           title="Skanna och indexera för snabb återfinning"
           description="Vår kalenderhanteringstjänst hjälper dig att hålla koll på dina möten och schemaläggning på ett enkelt och smidigt sätt. Vi kan hjälpa dig med allt från att skapa och dela kalendrar till att hantera bokningar och påminnelser."

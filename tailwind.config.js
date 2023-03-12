@@ -14,8 +14,9 @@ module.exports = {
         gray80: "#808080",
         grayC0: "#BCBEC0",
         grayD9: "#D9D9D9",
-        blueCF: "#0805CF",
-        lightblue: "#CAD3F9",
+        blueCF: "#FE91CA",
+        blue44: "#251F44",
+        lightblue: "#FFE0F7",
       },
       backgroundImage: {
         'home': `url("/public/assets/images/home/top.png")`,

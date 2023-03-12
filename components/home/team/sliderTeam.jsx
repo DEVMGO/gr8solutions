@@ -92,8 +92,8 @@ export default function TeamSlider() {
       <Swiper
         slidesPerView={"auto"}
         // spaceBetween={30}
-        loop={true}
-        centeredSlides={true}
+        // loop={true}
+        // centeredSlides={true}
         breakpoints={{
           440: {
             slidesPerView: 1,
@@ -105,7 +105,7 @@ export default function TeamSlider() {
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 10,
           },
         }}
         // pagination={{

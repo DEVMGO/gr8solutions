@@ -49,7 +49,7 @@ const Kontakta_Oss = () => {
               <h3 className="3xl:text-2xl md:text-xl text-lg font-medium text-black mb-4">
                 Våra öppettider
               </h3>
-              <div className="w-full flex items-start justify-center flex-col">
+              <div className="w-full flex items-start justify-center flex-col 3xl:gap-3 gap-2">
                 <div className="flex items-center justify-center 3xl:gap-5 gap-4">
                   <CalendarIcon className="[&>path]:stroke-black" />
                   <p className="3xl:text-2xl md:text-xl text-lg font-light text-black">

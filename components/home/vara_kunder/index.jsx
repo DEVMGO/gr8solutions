@@ -3,7 +3,7 @@ import SliderCustomers from "./sliderCustomers";
 
 const VaraKunder = () => {
   return (
-    <div className="w-full flex items-center justify-start flex-col 3xl:mb-60 md:mb-40 mb-24">
+    <div className="w-full flex items-center justify-start flex-col md:mb-0 mb-24">
       <div className="w-full flex items-center justify-start flex-col lg:gap-7 gap-4">
         <h5 className="md:text-2xl text-lg font-medium text-black">
           Våra kunder

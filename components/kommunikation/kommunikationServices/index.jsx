@@ -27,25 +27,25 @@ const ITServices = () => {
           />
         </div>
         <CardService
-          icon={<MeetingIcon />}
+          icon={<MeetingIcon className="[&>path]:fill-blueCF" />}
           bigTitle="MÖTESLÖSNINGAR"
           title="Smidiga och professionella möten med hjälp av teknik"
           description="GR8 Solutions erbjuder möteslösningar för ditt företag. Vi hjälper dig att skapa smidiga och professionella möten med hjälp av teknik som videokonferens och digitala whiteboard. Detta gör det möjligt för ditt företag att hålla kontakten med kunder och medarbetare, oavsett var de befinner sig."
         />
         <CardService
-          icon={<SwitcheIcon />}
+          icon={<SwitcheIcon className="[&>path]:fill-blueCF" />}
           bigTitle="VÄXLAR OCH KOMMUNIKATION"
           title="Enkel och effektiv kommunikation för ditt företag"
           description="GR8 Solutions erbjuder installation och drift av växlar för ditt företag. Vi ser till att växeln är anpassad efter dina specifika behov och att den fungerar exakt som önskat. Vi samarbetar även med ledande operatörer för att erbjuda dig ett brett utbud av telefonitjänster, inklusive fasta och mobiltelefoni. Detta gör det enkelt för ditt företag att kommunicera med kunder och medarbetare."
         />
         <CardService
-          icon={<MobileIcon />}
+          icon={<MobileIcon className="[&>path]:fill-blueCF" />}
           bigTitle="MOBILKOMMUNIKATION"
           title="Flexibilitet och tillgänglighet för ditt företag"
           description="GR8 Solutions erbjuder mobilkommunikationstjänster för ditt företag. Vi samarbetar med ledande operatörer för att erbjuda dig ett brett utbud av tjänster, inklusive mobiltelefoni, mobila data- och molnbaserade tjänster. Detta ger ditt företag flexibilitet och tillgänglighet, så att du kan kommunicera med dina kunder och medarbetare när som helst och var som helst."
         />
         <CardService
-          icon={<SolutionsIcon />}
+          icon={<SolutionsIcon className="[&>path]:fill-blueCF" />}
           bigTitle="KOMMUNIKATIONSLÖSNINGAR"
           title="Integrerade lösningar för effektiv kommunikation"
           description="GR8 Solutions erbjuder integrerade kommunikationslösningar för ditt företag. Vi hjälper dig att sammankoppla olika kommunikationskanaler som telefoni, e-post, chatt och videokonferens, för att skapa en enkel och effektiv kommunikationsmiljö. Detta gör det lättare för ditt företag att kommunicera med kunder och medarbetare, oavsett var de befinner sig."
