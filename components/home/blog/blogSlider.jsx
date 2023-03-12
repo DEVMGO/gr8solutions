@@ -62,15 +62,15 @@ export default function BlogSlider() {
         slidesPerView={"auto"}
         // spaceBetween={30}
         loop={true}
-        // centeredSlides={true}
+        centeredSlides={true}
         breakpoints={{
           440: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 3,

@@ -46,7 +46,7 @@ const OurPartners = () => {
         },
     ]
   return (
-    <div className='w-full flex items-center justify-start flex-col 3xl:mt-60 mt-40'>
+    <div className='w-full flex items-center justify-start flex-col 3xl:mb-52 md:mb-36 mb-24'>
         <div className='w-full flex items-center justify-start mb-24'>
             <h5 className='3xl:text-2xl text-lg font-medium'>Våra samarbetspartners</h5>
         </div>

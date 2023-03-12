@@ -4,6 +4,7 @@ import Hero from "@/components/home/hero";
 import Services from "@/components/home/services";
 import AboutUs from "@/components/home/aboutus";
 import OurPartners from "@/components/home/ourPartners";
+import VaraKunder from "@/components/home/vara_kunder";
 import Siffror from "@/components/home/siffror";
 import Team from "@/components/home/team";
 import Professional from "@/components/home/professional";
@@ -18,11 +19,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-full flex items-center justify-start flex-col 3xl:py-[120px] py-20">
+      <main className="w-full flex items-center justify-start flex-col 3xl:py-[120px] md:py-20 py-12">
         <Hero />
         <Services />
         <AboutUs />
         <OurPartners />
+        <VaraKunder />
         <Siffror />
         <Team />
         <Professional />

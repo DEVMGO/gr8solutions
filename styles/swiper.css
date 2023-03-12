@@ -19,3 +19,106 @@
   height: 100%;
   object-fit: cover;
 }
+
+.customers {
+  padding: 0 clamp(3rem, 6vw, 6rem) !important;
+}
+
+.customers .swiper-wrapper {
+  padding: 1rem 0 !important;
+}
+
+.customers .swiper-slide {
+  opacity: 0;
+}
+
+.customers .swiper-slide-next,
+.customers .swiper-slide-prev,
+.customers .swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.customers .swiper-slide-next p,
+.customers .swiper-slide-prev p,
+.customers .swiper-slide-next h5,
+.customers .swiper-slide-prev h5 {
+  display: none !important;
+}
+
+.customers .swiper-slide-next img,
+.customers .swiper-slide-prev img {
+  opacity: 0.5;
+}
+
+.customers .swiper-button-prev,
+.customers .swiper-button-next {
+  top: 5%;
+}
+
+.customers .swiper-slide-next,
+.customers .swiper-slide-prev {
+  width: 22% !important;
+}
+
+.customers .swiper-slide-active {
+  width: 50% !important;
+}
+
+.customers .swiper-button-next {
+  content: "";
+  width: clamp(2.5rem, 3vw, 3rem) !important;
+  height: clamp(2.5rem, 3vw, 3rem) !important;
+  background-image: url("../public/assets/images/nextIcon.svg") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* top: -1rem; */
+  z-index: 9999999999;
+}
+
+.customers .swiper-button-next::after {
+  content: "" !important;
+}
+
+.customers .swiper-button-prev {
+  content: "";
+  width: clamp(2.5rem, 3vw, 3rem) !important;
+  height: clamp(2.5rem, 3vw, 3rem) !important;
+  background-image: url("../public/assets/images/prevIcon.svg") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.customers .swiper-button-prev::after {
+  content: "" !important;
+}
+
+@media (max-width: 1024px) {
+  .customers .swiper-slide {
+    opacity: 1;
+  }
+
+  .customers .swiper-slide-next,
+  .customers .swiper-slide-prev {
+    width: 100% !important;
+  }
+
+  .customers .swiper-slide-active {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .customers .swiper-slide-next,
+  .customers .swiper-slide-prev {
+    opacity: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .customers .swiper-button-prev,
+  .customers .swiper-button-next {
+    top: 90% !important;
+  }
+}

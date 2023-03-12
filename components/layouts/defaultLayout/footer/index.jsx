@@ -3,80 +3,171 @@ import Link from "next/link";
 import Image from "next/image";
 // image
 import Logo from "@/public/assets/images/logo.svg";
+import ButtonBlack from "@/components/ui/buttons/buttonBlack";
+import LocationIcon from "@/components/ui/icons/locationIcon";
+import PhoneIcon from "@/components/ui/icons/phoneIcon";
+import EmailIcon from "@/components/ui/icons/emailIcon";
 // icons
-// import EmailIcon from "@/components/ui/icons/email";
-// import PhoneIcon from "@/components/ui/icons/phone";
-// import LocationIcon from "@/components/ui/icons/location";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
-  const menuItems = [
+  const pageItems = [
     {
       title: "Hem",
       url: "/",
     },
     {
-      title: "Meny",
-      url: "/meny",
+      title: "Team",
+      url: "/team",
     },
     {
-      title: "Om oss",
-      url: "/om-oss",
+      title: "Karriär",
+      url: "#",
     },
     {
-      title: "Kontakt",
-      url: "/kontakt",
+      title: "Blogg",
+      url: "/blogg",
+    },
+    {
+      title: "Integritetspolicy",
+      url: "#",
+    },
+  ];
+
+  const serviceItems = [
+    {
+      title: "Telefoni",
+      url: "/telefoni",
+    },
+    {
+      title: "Kommunikation",
+      url: "/kommunikation",
+    },
+    {
+      title: "IT",
+      url: "it",
+    },
+    {
+      title: "Office-tjänster",
+      url: "/office_tjanster",
+    },
+    {
+      title: "GPS & Körjournal",
+      url: "#",
     },
   ];
 
   return (
     <div className="w-full flex items-center justify-center flex-col bg-blue28">
-      <div className="w-full flex items-start justify-between md:flex-row flex-col md:px-4 p-4 px-8">
-        <div className="w-full flex sm:items-center items-start justify-start flex-col my-8">
-          <div className="flex items-start justify-start flex-col">
-            <Image src={Logo} alt="twins pizzeria" />
-            <div className="min-w-max text-xs text-white mt-3 flex items-center justify-center">
-              <p>© 2022</p> <h1>Twins Pizzeria</h1>
-              <p>. Alla rättigheter förbehållna</p>
+      <div className="w-4/5 flex items-center justify-end flex-col border-t border-black">
+        <div className="w-full flex items-center justify-between 3xl:mt-36 md:mt-24 mt-12">
+          <h5 className="3xl:text-6xl md:text-4xl text-2xl text-black font-medium">
+            KONTAKTA OSS
+          </h5>
+          <div className="md:flex items-center justify-end 3xl:gap-4 gap-3 hidden">
+            <ButtonBlack className="3xl:w-60 w-40 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+              KONTAKTA OSS
+            </ButtonBlack>
+            <ButtonBlack className="3xl:w-60 w-40 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+              OM OSS
+            </ButtonBlack>
+          </div>
+        </div>
+
+        <div className="w-full flex items-start justify-between lg:flex-row flex-col 3xl:mt-24 md:mt-16 mt-14">
+          <div className="w-full flex items-start justify-start flex-col lg:order-1 order-2">
+            <div className="items-start justify-start flex-col lg:flex hidden">
+              <Image
+                src={Logo}
+                alt="gr8 solution"
+                className="3xl:w-28 md:w-20 w-12 3xl:mb-8 md:mb-6 mb-4"
+              />
+              <h4 className="text-2xl font-medium text-black">
+                "When good is not enough"
+              </h4>
+            </div>
+            <div className="flex items-start justify-start flex-col 3xl:mt-24 md:mt-16 mt-14">
+              <div className="flex items-center justify-center 3xl:gap-5 gap-4">
+                <LocationIcon className="[&>path]:stroke-black" />
+                <p className="3xl:text-2xl md:text-xl text-base font-light text-black">
+                  Terminalgatan 20, 235 39 Vellinge
+                </p>
+              </div>
+              <div className="flex items-center justify-center 3xl:gap-5 gap-4">
+                <PhoneIcon className="[&>path]:stroke-black" />
+                <p className="3xl:text-2xl md:text-xl text-lg font-light text-black">
+                  020-10 38 10
+                </p>
+              </div>
+              <div className="flex items-center justify-center 3xl:gap-5 gap-4">
+                <EmailIcon className="[&>path]:stroke-black" />
+                <p className="3xl:text-2xl md:text-xl text-lg font-light text-black">
+                  info@gr8solutions.se
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-start justify-start flex-col lg:order-2 order-1">
+            <div className="flex items-start justify-start flex-col lg:hidden">
+              <Image
+                src={Logo}
+                alt="gr8 solution"
+                className="3xl:w-28 md:w-20 w-12 3xl:mb-8 md:mb-6 mb-4"
+              />
+              <h4 className="md:text-2xl text-xl font-medium text-black">
+                "When good is not enough"
+              </h4>
+            </div>
+            <div className="flex items-start justify-between md:gap-16 gap-14 lg:mt-0 mt-14">
+              <div className="flex items-start justify-start flex-col">
+                <h4 className="3xl:text-2xl md:text-xl text-lg text-black font-medium">
+                  SIDOR
+                </h4>
+                {pageItems?.map((item, index) => (
+                  <Link
+                    href={item.url}
+                    key={index}
+                    className="3xl:text-2xl md:text-xl text-base text-black font-light min-w-max"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex items-start justify-start flex-col">
+                <h4 className="3xl:text-2xl md:text-xl text-lg text-black font-medium">
+                  TJÄNSTER
+                </h4>
+                {serviceItems?.map((item, index) => (
+                  <Link
+                    href={item.url}
+                    key={index}
+                    className="3xl:text-2xl md:text-xl text-base text-black font-light min-w-max"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="w-full flex items-start justify-center my-8">
-          <ul className={`flex items-start justify-start md:flex-col flex-row`}>
-            {menuItems.map((item, index) => (
-              <li
-                key={index + "navitems"}
-                className={`flex items-center justify-center text-sm text-white sm:p-4 p-2`}
-              >
-                <Link href={item.url}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="w-full flex sm:items-center items-start justify-start flex-col my-8">
-          <div className="flex items-start justify-start flex-col">
-            <h5 className="text-sm font-bold text-white">Information</h5>
-            <div className="flex items-center justify-start my-3">
-              {/* <LocationIcon className="mr-2 text-white text-lg" /> */}
-              <p className="text-sm text-white">Lundavägen 71A, 212 24 Malmö</p>
-            </div>
-            <div className="flex items-center justify-start my-3">
-              {/* <PhoneIcon className="mr-2 text-white text-lg" /> */}
-              <p className="text-sm text-white">040-18 23 22 , 040-18 50 50</p>
-            </div>
-            <div className="flex items-center justify-start my-3">
-              {/* <EmailIcon className="mr-2 text-white text-lg" /> */}
-              <p className="text-sm text-white">Kontakt@twinspizzeria.se</p>
-            </div>
+        <div className="w-full min-h-28 border-t border-black flex md:items-center items-start justify-between md:flex-row flex-col 3xl:mt-36 md:mt-24 mt-14 gap-6 py-6">
+          <p className="3xl:text-2xl md:text-xl text-lg text-black font-light md:order-1 order-2">
+            © 2022-23. Alla rättigheter förbehållna
+          </p>
+          <div className="flex items-center justify-center 3xl:gap-5 gap-4 md:order-2 order-1">
+            <a className="w-12 h-12 bg-black rounded-full text-2xl text-white flex items-center justify-center">
+              <BsInstagram />
+            </a>
+            <a className="w-12 h-12 bg-black rounded-full text-2xl text-white flex items-center justify-center">
+              <FaFacebookF />
+            </a>
+            <a className="w-12 h-12 bg-black rounded-full text-2xl text-white flex items-center justify-center">
+              <FaLinkedinIn />
+            </a>
           </div>
-        </div>
-      </div>
-
-      <div className="w-full flex items-center justify-center p-4 border-t border-gray-50 border-opacity-20">
-        <div className="text-sm text-white flex items-center justify-center">
-          <p>© 2022</p> <h1>Twins divizzeria</h1>
-          <p>. Alla rättigheter förbehållna</p>
         </div>
       </div>
     </div>

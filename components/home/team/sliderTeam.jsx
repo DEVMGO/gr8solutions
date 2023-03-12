@@ -116,13 +116,7 @@ export default function TeamSlider() {
       >
         {listTeam.map((item, index) => (
           <SwiperSlide key={index}>
-            <TeamCard
-              image={item.image}
-              name={item.name}
-              position={item.position}
-              phone={item.phone}
-              email={item.email}
-            />
+            <TeamCard data={item} />
           </SwiperSlide>
         ))}
       </Swiper>

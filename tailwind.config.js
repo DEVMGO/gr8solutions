@@ -31,8 +31,10 @@ module.exports = {
         20: "repeat(auto-fill, minmax(270px, 1fr))",
         21: "repeat(auto-fit, minmax(280px, 1fr))",
         22: "repeat(auto-fit, minmax(100px, 1fr))",
+        23: "repeat(auto-fit, minmax(360px, 1fr))",
+        24: "repeat(auto-fit, minmax(400px, 1fr))",
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp'),],
 };
