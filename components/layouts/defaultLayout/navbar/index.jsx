@@ -15,7 +15,13 @@ const Navbar = () => {
   const pathname = useRouter().pathname;
   const [menu, setMenu] = useState(false);
   const [showChildren, setShowChildren] = useState(null);
-  const handleChildren = (id) => setShowChildren(id);
+  const handleChildren = (id) => {
+    if (showChildren === id) {
+      setShowChildren(null);
+    } else {
+      setShowChildren(id);
+    }
+  };
   const title = pathname.split("/")[1];
   const upTitle = title?.replace("_", " ");
 
@@ -49,7 +55,7 @@ const Navbar = () => {
     },
     {
       title: "OM OSS",
-      url: "/om-oss",
+      url: "/om_Oss",
       children: [
         {
           title: "Team",
@@ -184,18 +190,46 @@ const Navbar = () => {
             >
               {menuItems.map((item, index) => (
                 <li
-                  onClick={() => setMenu(false)}
+                  onClick={() =>
+                    item.children.length > 0
+                      ? handleChildren(index)
+                      : setMenu(!menu)
+                  }
                   key={index + "navitems"}
-                  className={`w-full flex items-center justify-start border-b border-gray-50 border-opacity-10`}
+                  className={`w-full flex items-start justify-center flex-col border-b border-gray-50 border-opacity-10`}
                 >
                   <Link href={item.url}>
                     <div>
-                      <p className="text-lg font-medium text-black flex items-center gap-2">
+                      <p className="min-w-max text-lg font-medium text-black flex items-center gap-2">
                         {item.title}{" "}
                         {item.children.length > 0 && <FiChevronDown />}
                       </p>
                     </div>
                   </Link>
+                  {item.children.length > 0 && (
+                    <ul
+                      className={`w-full min-w-max z-40 rounded-md flex items-start justify-center flex-col overflow-hidden ${
+                        showChildren === index
+                          ? "max-h-screen"
+                          : " max-h-0 p-0 opacity-0"
+                      }`}
+                    >
+                      {item.children.map((itm, idx) => (
+                        <li
+                          onClick={() => setMenu(!menu)}
+                          key={idx}
+                          className="w-full flex items-center justify-start rounded hover:bg-gray-100 p-3"
+                        >
+                          <Link
+                            href={itm.url}
+                            className="text-gray-900 text-lg font-light"
+                          >
+                            {itm.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
