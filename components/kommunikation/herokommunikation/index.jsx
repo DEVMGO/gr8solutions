@@ -5,7 +5,7 @@ import ButtonBlack from "@/components/ui/buttons/buttonBlack";
 // images
 import Img from "@/public/assets/images/kommunikation/kommunikation.png";
 
-const HeroIT = () => {
+const HeroKommunikation = () => {
   return (
     <div className="w-full flex items-stretch justify-center lg:flex-row flex-col lg:gap-16 gap-0 3xl:mb-44 md:mb-36 mb-24 3xl:mt-32 md:mt-20 mt-12">
       <div className="lg:w-1/2 w-full h-auto flex items-end justify-start flex-col lg:mb-0 mb-4">
@@ -43,4 +43,4 @@ const HeroIT = () => {
   );
 };
 
-export default HeroIT;
+export default HeroKommunikation;
