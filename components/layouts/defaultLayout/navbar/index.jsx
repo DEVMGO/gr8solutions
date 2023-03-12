@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 // images
 import Logo from "@/public/assets/images/logo.png";
+import Logo2 from "@/public/assets/images/logo.svg";
 // icons
 import { IoClose } from "react-icons/io5";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -33,7 +34,7 @@ const Navbar = () => {
     },
     {
       title: "TJÄNSTER",
-      url: "#",
+      url: "/Vara_Tjanster",
       children: [
         {
           title: "Telefoni",
@@ -175,7 +176,7 @@ const Navbar = () => {
           <div className="w-4/5 h-full bg-white rounded-r-3xl flex items-center justify-start flex-col lg:gap-14 md:gap-8 pl-4 p-12 overflow-auto">
             <div className="w-full flex items-center justify-between px-4">
               <Link href="/">
-                <Image src={Logo} alt="gr8 solutions" className="w-12 h-6" />
+                <Image src={Logo2} alt="gr8 solutions" className="w-12 h-6" />
               </Link>
 
               <button
@@ -190,29 +191,28 @@ const Navbar = () => {
             >
               {menuItems.map((item, index) => (
                 <li
-                  onClick={() =>
-                    item.children.length > 0
-                      ? handleChildren(index)
-                      : setMenu(!menu)
-                  }
                   key={index + "navitems"}
-                  className={`w-full flex items-start justify-center flex-col border-b border-gray-50 border-opacity-10`}
+                  className={`w-full flex items-start justify-center flex-col border-b border-gray-50 border-opacity-10 min-w-max`}
                 >
-                  <Link href={item.url}>
-                    <div>
-                      <p className="min-w-max text-lg font-medium text-black flex items-center gap-2">
-                        {item.title}{" "}
-                        {item.children.length > 0 && <FiChevronDown />}
+                  <div className="w-full flex items-center justify-start gap-3">
+                    <Link href={item.url} onClick={() => setMenu(!menu)}>
+                      <p className="min-w-max text-lg font-medium text-black flex items-center">
+                        {item.title}
                       </p>
-                    </div>
-                  </Link>
+                    </Link>
+                    <p className="min-w-max text-lg font-medium text-black flex items-center">
+                      {item.children.length > 0 && (
+                        <FiChevronDown onClick={() => handleChildren(index)} />
+                      )}
+                    </p>
+                  </div>
                   {item.children.length > 0 && (
                     <ul
                       className={`w-full min-w-max z-40 flex items-start justify-center flex-col overflow-hidden ${
                         showChildren === index
                           ? "max-h-screen"
                           : " max-h-0 p-0 opacity-0"
-                      }`}
+                      } transition-all duration-300`}
                     >
                       {item.children.map((itm, idx) => (
                         <li

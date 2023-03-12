@@ -20,7 +20,7 @@ const WelcomeToGr8 = () => {
 
       <div className="lg:w-1/2 w-full h-auto flex items-start justify-between flex-col">
         <div className="flex items-start justify-start flex-col 3xl:gap-7 gap-4">
-          <IconWelcome />
+          <IconWelcome className="[&>path]:fill-blueCF" />
           <h1 className="3xl:text-2xl text-lg font-medium text-black">
             VÄLKOMMEN TILL GR8 SOLUTIONS
           </h1>

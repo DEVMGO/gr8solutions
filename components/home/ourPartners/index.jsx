@@ -48,7 +48,7 @@ const OurPartners = () => {
   return (
     <div className='w-full flex items-center justify-start flex-col 3xl:mb-52 md:mb-36 mb-24'>
         <div className='w-full flex items-center justify-start mb-24'>
-            <h5 className='3xl:text-2xl text-lg font-medium'>Våra samarbetspartners</h5>
+            <h5 className='3xl:text-2xl text-lg font-medium text-blue44'>Våra samarbetspartners</h5>
         </div>
         <div className='w-full max-w-4xl gap-20 grid md:grid-cols-16 grid-cols-22 items-center justify-center '>
             {partnersList.map((item , index) => (<Image key={index} src={item.image} alt={item.title} />))}

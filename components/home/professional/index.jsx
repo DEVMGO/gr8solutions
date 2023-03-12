@@ -13,7 +13,7 @@ const Professional = () => {
   return (
     <div className="w-full flex items-center justify-center flex-col 3xl:mb-60 md:mb-40 mb-24">
       <div className="w-full flex items-start justify-center flex-col">
-        <h4 className="3xl:text-6xl md:text-5xl text-4xl font-medium text-black mb-7">
+        <h4 className="3xl:text-6xl md:text-5xl text-4xl font-medium text-blue44 mb-7">
           KARRIÄR
         </h4>
         <p className="3xl:text-2xl md:text-xl text-lg font-light text-gray80 max-w-2xl mb-24">

@@ -10,6 +10,8 @@ import EmailIcon from "@/components/ui/icons/emailIcon";
 // icons
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+// style
+import style from "@/styles/Home.module.css";
 
 const Footer = () => {
   const pageItems = [
@@ -59,7 +61,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="w-full flex items-center justify-center flex-col bg-blue28 3xl:mt-52 md:mt-40 mt-28">
+    <div className={`${style.footer} relative w-full flex items-center justify-center flex-col bg-blue28 3xl:mt-52 md:mt-40 mt-28 after:absolute after:bottom-0 after:w-full after:h-full after:-z-10`}>
       <div className="w-4/5 flex items-center justify-end flex-col border-t border-black">
         <div className="w-full flex items-center justify-between 3xl:mt-36 md:mt-24 mt-12">
           <h5 className="3xl:text-6xl md:text-4xl text-2xl text-black font-medium">

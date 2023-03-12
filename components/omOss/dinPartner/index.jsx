@@ -10,7 +10,7 @@ const DinPartner = () => {
     <div className="w-full flex items-stretch justify-between lg:flex-row flex-col gap-4 3xl:mb-60 md:mb-48 mb-24">
       <div className="lg:w-1/2 w-full lg:order-1 order-2 h-auto flex items-start justify-between flex-col">
         <div className="w-full 3xl:max-w-2xl max-w-xl flex items-start justify-start flex-col 3xl:gap-7 gap-4">
-          <PartnerIcon />
+          <PartnerIcon className="[&>path]:fill-blueCF" />
           <h1 className="3xl:text-2xl text-lg font-medium text-black">
             DIN PARTNER FÖR SKRÄDDARSYDDA IT & TELEKOMLÖSNINGAR
           </h1>
