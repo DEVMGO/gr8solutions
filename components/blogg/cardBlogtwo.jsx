@@ -6,7 +6,7 @@ import { HiArrowRight } from "react-icons/hi";
 const CardBlogTwo = ({ data, image, title, description, link, index }) => {
   return (
     <div className="w-full flex items-center justify-start gap-3">
-      <div className="w-full max-w-[247px] min-w-[11rem] 3xl:h-60 md:h-52 h-44 flex items-start justify-center 3xl:rounded-3xl rounded-2xl overflow-hidden mb-14">
+      <div className="w-full max-w-[247px] min-w-[11rem] 3xl:h-60 md:h-52 h-44 flex items-start justify-center 3xl:rounded-3xl rounded-2xl overflow-hidden">
         <Image
           src={image ? image : data?.image}
           alt={title ? title : data?.title}

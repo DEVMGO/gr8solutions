@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Components
 import HeroKommunikation from "@/components/kommunikation/heroKommunikation";
 import KommunikationServices from "@/components/kommunikation/kommunikationServices";
@@ -6,6 +7,9 @@ import KommunikationServices from "@/components/kommunikation/kommunikationServi
 const Kommunikation = () => {
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | KOMMUNIKATION</title>
+      </Head>
       <HeroKommunikation />
       <KommunikationServices />
       <div className="w-full flex items-center justify-start 3xl:mt-24 md:mt-16 mt-14">

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Components
 import TeamCard from "@/components/ui/teamCard";
 // images
@@ -137,6 +138,9 @@ const Team = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | TEAM</title>
+      </Head>
       <div className="w-full flex items-center justify-start flex-col 3xl:mt-[120px] md:mt-16 mt-12 3xl:gap-20 md:gap-16 gap-9">
         <div className="w-full flex items-start justify-center flex-col">
           <h4 className="3xl:text-6xl md:text-4xl text-xl font-medium text-black lg:block hidden 3xl:mb-7 mb-5">

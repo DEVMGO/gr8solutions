@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Components
 import HeroIT from "@/components/it/heroIT";
 import ITServices from "@/components/it/iTServices";
@@ -6,6 +7,9 @@ import ITServices from "@/components/it/iTServices";
 const IT = () => {
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | IT</title>
+      </Head>
       <HeroIT />
       <ITServices />
       <div className="w-full flex items-center justify-start 3xl:mt-24 md:mt-16 mt-14">

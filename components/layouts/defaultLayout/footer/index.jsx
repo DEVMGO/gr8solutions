@@ -59,17 +59,17 @@ const Footer = () => {
   ];
 
   return (
-    <div className="w-full flex items-center justify-center flex-col bg-blue28">
+    <div className="w-full flex items-center justify-center flex-col bg-blue28 3xl:mt-52 md:mt-40 mt-28">
       <div className="w-4/5 flex items-center justify-end flex-col border-t border-black">
         <div className="w-full flex items-center justify-between 3xl:mt-36 md:mt-24 mt-12">
           <h5 className="3xl:text-6xl md:text-4xl text-2xl text-black font-medium">
             KONTAKTA OSS
           </h5>
-          <div className="md:flex items-center justify-end 3xl:gap-4 gap-3 hidden">
-            <ButtonBlack className="3xl:w-60 w-40 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+          <div className="md:flex items-center justify-end 3xl:gap-4 gap-3 hidden min-w-max">
+            <ButtonBlack className="3xl:w-60 md:w-48 w-40 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
               KONTAKTA OSS
             </ButtonBlack>
-            <ButtonBlack className="3xl:w-60 w-40 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+            <ButtonBlack className="3xl:w-60 md:w-48 w-40 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
               OM OSS
             </ButtonBlack>
           </div>

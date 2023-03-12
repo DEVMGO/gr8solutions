@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Components
 import CardBlog from "@/components/home/blog/cardBlog";
 import ButtonBlack from "@/components/ui/buttons/buttonBlack";
@@ -57,6 +58,9 @@ const Blogg = () => {
   ];
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | Blogg</title>
+      </Head>
       <div className="w-full flex items-center justify-between 3xl:mt-28 md:mt-16 mt-12">
         <h4 className="3xl:text-6xl md:text-4xl text-2xl text-black font-medium lg:block hidden">
           BLOGG

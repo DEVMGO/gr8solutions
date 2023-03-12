@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Components
 import HeroTelefoni from "@/components/telefoni/heroTelefoni";
 import TelephoneService from "@/components/telefoni/telephoneService";
@@ -6,6 +7,9 @@ import TelephoneService from "@/components/telefoni/telephoneService";
 const Telefoni = () => {
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | TELEFONI</title>
+      </Head>
       <HeroTelefoni />
       <TelephoneService />
       <div className="w-full flex items-center justify-start 3xl:mt-24 md:mt-16 mt-14">

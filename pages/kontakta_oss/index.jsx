@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Icons
 import AlarmIcon from "@/components/ui/icons/alarmIcon";
 import CalendarIcon from "@/components/ui/icons/calendarIcon";
@@ -10,6 +11,9 @@ import FormContactUS from "@/components/kontakta_oss/formContactUS";
 const Kontakta_Oss = () => {
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | KONTAKTA OSS</title>
+      </Head>
       <div className="w-full flex items-stretch justify-between xl:flex-row flex-col 3xl:mt-28 md:mt-16 mt-12 3xl:gap-24 md:gap-16 gap-12">
         <div className="w-full h-auto flex items-start justify-between flex-col lg:order-1 order-2">
           <h3 className="3xl:text-[7.5rem] text-8xl font-bold text-black lg:block hidden">

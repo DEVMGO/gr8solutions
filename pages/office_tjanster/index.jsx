@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 // Components
 import HeroOfficeTjanster from "@/components/office_tjanster/heroOfficeTjanster";
 import OfficeTjansterServices from "@/components/office_tjanster/officeTjansterService";
@@ -6,6 +7,9 @@ import OfficeTjansterServices from "@/components/office_tjanster/officeTjansterS
 const OfficeTjanster = () => {
   return (
     <Fragment>
+      <Head>
+        <title>GR8 | OFFICE-TJÄNSTER</title>
+      </Head>
       <HeroOfficeTjanster />
       <OfficeTjansterServices />
       <div className="w-full flex items-center justify-start 3xl:mt-24 md:mt-16 mt-14">
