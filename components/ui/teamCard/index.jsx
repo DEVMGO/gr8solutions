@@ -24,7 +24,7 @@ const TeamCard = ({ data }) => {
         <h5 className="3xl:text-2xl md:text-xl text-sm text-white group-hover:text-blueCF font-medium transition-all duration-300">{data?.name}</h5>
         <h5 className="3xl:text-lg md:text-base text-sm text-white group-hover:text-blueCF font-medium transition-all duration-300">{data?.position}</h5>
 
-        <div className="w-full flex items-start justify-center flex-col 3xl:mt-9 mt-7">
+        <div className="w-full flex items-start justify-center flex-col 3xl:mt-9 mt-7 gap-2">
             <div className="flex items-center justify-center 3xl:gap-5 gap-4">
                 <PhoneIcon className="group-hover:[&>path]:stroke-blueCF transition-all duration-300 ease-in-out" /> <p className="3xl:text-lg text-base font-light text-white group-hover:text-blueCF transition-all duration-300">{data?.phone}</p>
             </div>

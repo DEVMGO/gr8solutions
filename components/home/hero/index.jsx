@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
 
       <div className="lg:w-1/2 w-full lg:order-2 order-1 h-auto flex items-end justify-start flex-col">
-        <Slide direction="right" delay={350} triggerOnce>
+        <Slide direction="right" delay={350} triggerOnce className="w-full">
           <div className="w-full flex items-start justify-center flex-col lg:hidden">
             <h1 className="3xl:text-9xl md:text-6xl text-4xl font-bold text-black">
               GR8 Solutions

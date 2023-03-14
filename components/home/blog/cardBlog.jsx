@@ -17,7 +17,7 @@ const CardBlog = ({ data, image, title, description, link, index }) => {
         <h4 className="text-base font-light text-gray80 mb-4">
           {title ? title : data?.title}
         </h4>
-        <p className="3xl:text-lg md:text-base text-sm font-medium text-black mb-10 text-justify line-clamp-2">
+        <p className="3xl:text-lg md:text-base text-sm font-medium text-black mb-10 text-start line-clamp-2">
           {description ? description : data?.description}
           {/* {data?.description < 20 ? data?.description : `${data?.description.slice(0, 20)}...`} */}
         </p>
