@@ -16,6 +16,7 @@ import TeamCard from "@/components/ui/teamCard";
 import Img1 from "@/public/assets/images/home/customer1.png";
 import Img2 from "@/public/assets/images/home/customer2.png";
 import Img3 from "@/public/assets/images/home/customer3.png";
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function SliderCustomers() {
   const listCustomers = [
@@ -92,18 +93,24 @@ export default function SliderCustomers() {
       >
         {listCustomers.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full flex items-center justify-center flex-col">
+            <Fade
+              triggerOnce
+              direction="right"
+              className="w-full flex items-center justify-center flex-col"
+            >
               <Image src={item.logo} />
-              <p className="text-center 3xl:text-2xl md:text-xl text-lg text-gray80 font-light 3xl:mt-20 md:mt-16 mt-14">
-                {item.description}
-              </p>
+              <Slide triggerOnce direction="right" delay={300}>
+                <p className="text-center 3xl:text-2xl md:text-xl text-lg text-gray80 font-light 3xl:mt-20 md:mt-16 mt-14">
+                  {item.description}
+                </p>
+              </Slide>
               <div className="w-full flex items-center justify-center flex-col md:gap-2 gap-3 md:mt-14 mt-24">
                 <h5 className="text-2xl font-medium text-black">{item.name}</h5>
                 <h5 className="text-lg font-medium text-black">
                   {item.office}
                 </h5>
               </div>
-            </div>
+            </Fade>
           </SwiperSlide>
         ))}
       </Swiper>

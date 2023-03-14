@@ -16,6 +16,7 @@ import Img3 from "@/public/assets/images/blog/img3.png";
 import Img4 from "@/public/assets/images/blog/img4.png";
 import Img5 from "@/public/assets/images/blog/img5.png";
 import Img6 from "@/public/assets/images/blog/img6.png";
+import { Fade } from "react-awesome-reveal";
 
 export default function BlogSlider() {
   const listBlog = [
@@ -85,7 +86,9 @@ export default function BlogSlider() {
       >
         {listBlog.map((item, index) => (
           <SwiperSlide key={index}>
-            <CardBlog data={item} index={index} />
+            <Fade delay={`+${index + "0"}`} triggerOnce className="w-full">
+              <CardBlog data={item} index={index} />
+            </Fade>
           </SwiperSlide>
         ))}
       </Swiper>

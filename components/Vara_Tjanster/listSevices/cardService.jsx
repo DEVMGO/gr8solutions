@@ -5,7 +5,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const CardService = ({ data, index }) => {
   return (
-    <div className="w-full flex items-stretch justify-center bg-lightblue rounded-[20px] 3xl:p-10 md:p-8 p-5 3xl:gap-10 gap-8">
+    <div className="w-full flex items-stretch justify-center bg-lightblue bg-opacity-50 hover:bg-opacity-100 transition-all duration-300 rounded-[20px] 3xl:p-10 md:p-8 p-5 3xl:gap-10 gap-8">
       <div className="w-full h-full rounded-[20px] overflow-hidden lg:block hidden">
         <Image src={data?.image} alt={data?.title} className="w-full h-full object-cover" />
       </div>

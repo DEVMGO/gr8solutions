@@ -20,7 +20,7 @@ const ListServices = () => {
   const listItems = [
     {
       image: Img2,
-      icon: <TelefoniIcon />,
+      icon: <TelefoniIcon className="[&>path]:fill-blueCF" />,
       title: "Telefoni",
       description:
         "Vi erbjuder växlar och telefonilösningar för företag av alla storlekar. Vi ser till att växeln är på plats och fungerar exakt som önskat.",
@@ -28,7 +28,7 @@ const ListServices = () => {
     },
     {
       image: Img3,
-      icon: <ConnectIcon />,
+      icon: <ConnectIcon className="[&>path]:fill-blueCF" />,
       title: "Kommunikation",
       description:
         "Vi arbetar med några av de ledande operatörerna i Sverige för att erbjuda det bästa alternativet för våra kunder.",
@@ -36,7 +36,7 @@ const ListServices = () => {
     },
     {
       image: Img4,
-      icon: <ItIcon />,
+      icon: <ItIcon className="[&>path]:fill-blueCF" />,
       title: "IT-tjänster",
       description:
         "Vi samarbetar med företag som ser till att kundens IT är uppdaterad, molnbaserad och framförallt säker.",
@@ -44,7 +44,7 @@ const ListServices = () => {
     },
     {
       image: Img5,
-      icon: <OfficeIcon />,
+      icon: <OfficeIcon className="[&>path]:fill-blueCF" />,
       title: "Office-tjänster",
       description:
         "Vi hjälper dig med allt som har med officepaketet att göra, så att din kommunikation fungerar på ett sammanhållande och effektivt sätt.",
@@ -52,7 +52,7 @@ const ListServices = () => {
     },
     {
       image: Img6,
-      icon: <PrinterIcon />,
+      icon: <PrinterIcon className="[&>path]:fill-blueCF" />,
       title: "Skrivarelösningar",
       description:
         "Skrivarelösningar: Vi byter ut, installerar och underhåller era maskiner, allt för att hitta den bästa lösningen till era behov.",
@@ -60,7 +60,7 @@ const ListServices = () => {
     },
     {
       image: Img7,
-      icon: <GpsIcon />,
+      icon: <GpsIcon className="[&>path]:fill-blueCF" />,
       title: "GPS & Körjournal",
       description:
         "GPS & Körjournal: Öka effektiviteten med elektroniska körjournaler. Uppfyll skatteverkets dokumentationskrav, samtidigt som ni sparar både tid och pengar!",

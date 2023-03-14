@@ -20,6 +20,7 @@ import Img6 from "@/public/assets/images/team/team6.png";
 import Img7 from "@/public/assets/images/team/team7.png";
 import Img8 from "@/public/assets/images/team/team8.png";
 import Img9 from "@/public/assets/images/team/team10.png";
+import { Fade } from "react-awesome-reveal";
 
 export default function TeamSlider() {
   const listTeam = [
@@ -116,7 +117,9 @@ export default function TeamSlider() {
       >
         {listTeam.map((item, index) => (
           <SwiperSlide key={index}>
-            <TeamCard data={item} />
+            <Fade delay={`+${index + "0"}`} triggerOnce className="w-full">
+              <TeamCard data={item} />
+            </Fade>
           </SwiperSlide>
         ))}
       </Swiper>
