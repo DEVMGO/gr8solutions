@@ -6,12 +6,14 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Img from "@/public/assets/images/team/team1.png";
 import EmailIcon from "../icons/emailIcon";
 import PhoneIcon from "../icons/phoneIcon";
+// style
+import style from "@/styles/Home.module.css"
 
 const TeamCard = ({ data }) => {
   return (
     <div
       // style={{ background: `url(${image?.src})` }}
-      className={`w-full 3xl:h-[538px] md:h-[450px] h-[500px] rounded-2xl overflow-hidden flex items-center justify-between flex-col relative ease-in-out transition-all duration-500 3xl:p-6 p-4 before:z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-opacity-60 before:bg-gradient-to-t before:from-gray-800 hover:before:from-white before:transition-all before:duration-500 before:ease-in-out group`}
+      className={`${style.teamCard} w-full 3xl:h-[538px] md:h-[450px] rounded-2xl overflow-hidden flex items-center justify-between flex-col relative ease-in-out transition-all duration-500 3xl:p-6 p-4 before:z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-opacity-60 before:bg-gradient-to-t before:from-gray-800 hover:before:from-white before:transition-all before:duration-500 before:ease-in-out group`}
     >
       <img src={data?.image?.src} alt={data?.name} className="absolute w-full h-full sm:!object-cover !object-fill top-0 left-0" />
       <div className="w-full flex items-center justify-start z-20">

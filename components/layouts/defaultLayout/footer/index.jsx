@@ -52,11 +52,11 @@ const Footer = () => {
     },
     {
       title: "Office-tjänster",
-      url: "/office-tjansterr",
+      url: "/office-tjanster",
     },
     {
       title: "GPS & Körjournal",
-      url: "/office-tjansterr",
+      url: "/office-tjanster",
     },
   ];
 

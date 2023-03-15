@@ -50,3 +50,18 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+
+/* .teamCard {} */
+
+@media (max-width: 760px) {
+  .teamCard {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .teamCard {
+    height: 500px;
+  }
+}

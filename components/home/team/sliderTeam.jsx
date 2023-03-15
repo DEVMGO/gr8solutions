@@ -96,11 +96,11 @@ export default function TeamSlider() {
         // loop={true}
         // centeredSlides={true}
         breakpoints={{
-          500: {
+          450: {
             slidesPerView: 2,
             spaceBetween: 10,
           },
-          1024: {
+          830: {
             slidesPerView: 3,
             spaceBetween: 10,
           },

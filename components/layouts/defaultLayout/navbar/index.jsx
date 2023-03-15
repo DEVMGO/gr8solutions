@@ -23,6 +23,11 @@ const Navbar = () => {
       setShowChildren(id);
     }
   };
+  const handleClose = () => {
+    setTimeout(() => {
+      setShowChildren(null);
+    }, 400);
+  };
   const title = pathname.split("/")[1];
   const upTitle = title?.replace("_", " ");
 
@@ -99,12 +104,13 @@ const Navbar = () => {
                 onMouseLeave={() => setShowChildren(null)}
                 className={`h-full min-w-max flex items-center justify-center relative`}
               >
-                <Link href={item.url}>
-                  <div>
-                    <p
-                      onMouseEnter={() => handleChildren(index)}
-                      className="3xl:text-lg text-base font-medium text-black flex items-center gap-2"
-                    >
+                <Link
+                  href={item.url}
+                  className="w-full h-full flex items-center justify-center"
+                  onMouseEnter={() => handleChildren(index)}
+                >
+                  <div className="w-full h-full flex items-center justify-center">
+                    <p className="w-full h-full 3xl:text-lg text-base font-medium text-black flex items-center gap-2">
                       {item.title}{" "}
                       {item.children.length > 0 && (
                         <FiChevronDown
@@ -119,7 +125,7 @@ const Navbar = () => {
 
                 {item.children.length > 0 && (
                   <ul
-                    className={`absolute top-full w-full min-w-max z-40 bg-white flex items-start justify-center flex-col overflow-hidden translate-y-0.5 ${
+                    className={`absolute top-full w-full min-w-max z-40 bg-white flex items-start justify-center flex-col overflow-hidden ${
                       showChildren === index
                         ? "max-h-screen"
                         : " max-h-0 p-0 opacity-0"
