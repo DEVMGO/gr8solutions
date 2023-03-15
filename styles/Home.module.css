@@ -51,17 +51,28 @@
   );
 }
 
-
 /* .teamCard {} */
 
 @media (max-width: 760px) {
   .teamCard {
     height: 400px;
   }
+  .teamCard p {
+    font-size: clamp(0.7rem, .9vw, .9rem);
+  }
+  .teamCard svg {
+    width: clamp(.8rem, 1vw, 1rem);
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .teamCard {
     height: 500px;
+  }
+  .teamCard p {
+    font-size: 1rem;
+  }
+  .teamCard svg {
+    width: auto;
   }
 }

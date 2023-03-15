@@ -100,11 +100,11 @@ export default function TeamSlider() {
             slidesPerView: 2,
             spaceBetween: 10,
           },
-          830: {
+          990: {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          1200: {
+          1290: {
             slidesPerView: 4,
             spaceBetween: 10,
           },
