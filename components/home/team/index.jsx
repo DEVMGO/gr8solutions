@@ -21,7 +21,7 @@ const Team = () => {
           </div>
         </Slide>
         <Slide triggerOnce direction="right" delay={300}>
-          <ButtonBlack className="3xl:max-w-[16rem] 3xl:min-w-[16rem] max-w-[12rem] min-w-[12rem] md:block hidden 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
+          <ButtonBlack link="/team" className="3xl:max-w-[16rem] 3xl:min-w-[16rem] max-w-[12rem] min-w-[12rem] md:flex hidden 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm">
             SE VÅRT TEAM
           </ButtonBlack>
         </Slide>
@@ -31,7 +31,7 @@ const Team = () => {
         <TeamSlider />
       </div>
 
-      <ButtonBlack className="w-full md:hidden block h-12 text-lg rounded-3xl mt-12">
+      <ButtonBlack link="/team" className="w-full md:hidden flex h-12 text-lg rounded-3xl mt-12">
         SE VÅRT TEAM
       </ButtonBlack>
     </div>

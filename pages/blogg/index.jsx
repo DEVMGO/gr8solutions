@@ -59,7 +59,8 @@ const Blogg = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | Blogg</title>
+        <title>Blogg | GR8 Solutions</title>
+        <meta name="description" content="Välkommen till vår blogg där vi skriver om allt inom IT och kommunikation!" />
       </Head>
       <div className="w-full flex items-center justify-between 3xl:mt-28 md:mt-16 mt-12">
         <h4 className="3xl:text-6xl md:text-4xl text-2xl text-black font-medium lg:block hidden">

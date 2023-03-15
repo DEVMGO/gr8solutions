@@ -8,7 +8,8 @@ const Telefoni = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | TELEFONI</title>
+        <title>Telefoni | GR8 Solutions</title>
+        <meta name="description" content="Företagstelefoni är en avgörande del av varje verksamhet och vi på GR8 Solutions erbjuder ett brett utbud av tjänster för att hjälpa dig att hålla kontakten med dina kunder och samarbeta med dina medarbetare." />
       </Head>
       <HeroTelefoni />
       <TelephoneService />

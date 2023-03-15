@@ -34,7 +34,7 @@ const Navbar = () => {
     },
     {
       title: "TJÄNSTER",
-      url: "/Vara_Tjanster",
+      url: "/tjanster",
       children: [
         {
           title: "Telefoni",
@@ -50,13 +50,13 @@ const Navbar = () => {
         },
         {
           title: "Office-tjänster",
-          url: "/office_tjanster",
+          url: "/office-tjanster",
         },
       ],
     },
     {
       title: "OM OSS",
-      url: "/om_Oss",
+      url: "/om-oss",
       children: [
         {
           title: "Team",
@@ -71,7 +71,7 @@ const Navbar = () => {
     },
     {
       title: "KONTAKTA OSS",
-      url: "/kontakta_oss",
+      url: "/kontakta-oss",
       children: [],
     },
   ];
@@ -96,13 +96,15 @@ const Navbar = () => {
             {menuItems.map((item, index) => (
               <li
                 key={index + "navitems"}
-                className={`h-full min-w-max flex items-center justify-center relative`}
-                onMouseEnter={() => handleChildren(index)}
                 onMouseLeave={() => setShowChildren(null)}
+                className={`h-full min-w-max flex items-center justify-center relative`}
               >
                 <Link href={item.url}>
                   <div>
-                    <p className="3xl:text-lg text-base font-medium text-black flex items-center gap-2">
+                    <p
+                      onMouseEnter={() => handleChildren(index)}
+                      className="3xl:text-lg text-base font-medium text-black flex items-center gap-2"
+                    >
                       {item.title}{" "}
                       {item.children.length > 0 && (
                         <FiChevronDown

@@ -8,7 +8,11 @@ const Kommunikation = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | KOMMUNIKATION</title>
+        <title>Kommunikation | GR8 Solutions</title>
+        <meta
+          name="description"
+          content="Vi erbjuder ett brett utbud av lösningar för att hjälpa dig hålla kontakten med dina kunder och kommunicera effektivt med dina medarbetare. Från telefoni till e-post, chatt och videokonferens, vi har det du behöver för att skapa en smidig och effektiv kommunikation."
+        />
       </Head>
       <HeroKommunikation />
       <KommunikationServices />

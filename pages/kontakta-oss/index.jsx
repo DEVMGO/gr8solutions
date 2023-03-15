@@ -8,11 +8,12 @@ import LocationIcon from "@/components/ui/icons/locationIcon";
 import PhoneIcon from "@/components/ui/icons/phoneIcon";
 import FormContactUS from "@/components/kontakta-oss/formContactUS";
 
-const kontakta-oss = () => {
+const Kontakta_oss = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | KONTAKTA OSS</title>
+        <title>Kontakta oss | GR8 Solutions</title>
+        <meta name="description" content="Din dedikerade partner som levererar inom IT- & telefonitjänster. Kontakta oss idag!" />
       </Head>
       <div className="w-full flex items-stretch justify-between xl:flex-row flex-col 3xl:mt-28 md:mt-16 mt-12 3xl:gap-24 md:gap-16 gap-12">
         <div className="w-full h-auto flex items-start justify-between flex-col lg:order-1 order-2">
@@ -85,6 +86,6 @@ const kontakta-oss = () => {
   );
 };
 
-export default kontakta-oss;
+export default Kontakta_oss;
 
-kontakta-oss.layout = "L1";
+Kontakta_oss.layout = "L1";

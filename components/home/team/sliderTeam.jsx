@@ -91,16 +91,12 @@ export default function TeamSlider() {
   return (
     <>
       <Swiper
-        slidesPerView={"auto"}
+        // slidesPerView={"auto"}
         // spaceBetween={30}
         // loop={true}
         // centeredSlides={true}
         breakpoints={{
           500: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          768: {
             slidesPerView: 2,
             spaceBetween: 10,
           },

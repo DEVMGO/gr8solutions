@@ -14,7 +14,7 @@ const Blog = () => {
           </h4>
         </Slide>
         <Slide triggerOnce direction="right" delay={200}>
-          <ButtonBlack className="3xl:max-w-[237px] 3xl:min-w-[237px] max-w-[170px] min-w-[170px] 3xl:h-[72px] !h-14 3xl:text-lg !text-sm font-medium md:block hidden">
+          <ButtonBlack link="/blogg" className="3xl:max-w-[237px] 3xl:min-w-[237px] max-w-[170px] min-w-[170px] 3xl:h-[72px] !h-14 3xl:text-lg !text-sm font-medium md:flex hidden">
             LÄS MER
           </ButtonBlack>
         </Slide>
@@ -22,7 +22,7 @@ const Blog = () => {
       <div className="w-full flex items-center justify-start relative">
         <BlogSlider />
       </div>
-      <ButtonBlack className="w-full md:hidden block h-12 text-lg rounded-3xl mt-12">
+      <ButtonBlack link="/blogg" className="w-full md:hidden flex h-12 text-lg rounded-3xl mt-12">
         LÄS MER
       </ButtonBlack>
     </div>

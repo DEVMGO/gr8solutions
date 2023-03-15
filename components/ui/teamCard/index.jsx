@@ -11,9 +11,9 @@ const TeamCard = ({ data }) => {
   return (
     <div
       // style={{ background: `url(${image?.src})` }}
-      className={`w-full 3xl:h-[538px] h-[500px] rounded-2xl overflow-hidden flex items-center justify-between flex-col relative ease-in-out transition-all duration-500 3xl:p-6 p-4 before:z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-opacity-60 before:bg-gradient-to-t before:from-gray-800 hover:before:from-white before:transition-all before:duration-500 before:ease-in-out group`}
+      className={`w-full 3xl:h-[538px] md:h-[450px] h-[500px] rounded-2xl overflow-hidden flex items-center justify-between flex-col relative ease-in-out transition-all duration-500 3xl:p-6 p-4 before:z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-opacity-60 before:bg-gradient-to-t before:from-gray-800 hover:before:from-white before:transition-all before:duration-500 before:ease-in-out group`}
     >
-      <img src={data?.image?.src} alt={data?.name} className="absolute w-full h-full md:!object-cover !object-fill top-0 left-0" />
+      <img src={data?.image?.src} alt={data?.name} className="absolute w-full h-full sm:!object-cover !object-fill top-0 left-0" />
       <div className="w-full flex items-center justify-start z-20">
         <div className="3xl:w-12 w-10 3xl:h-12 h-10 rounded-full bg-black group-hover:bg-blueCF overflow-hidden flex items-center justify-center transition-all duration-300">
           <FaLinkedinIn className="text-white 3xl:text-2xl text-xl" />

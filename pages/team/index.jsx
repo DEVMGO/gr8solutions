@@ -139,7 +139,11 @@ const Team = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | TEAM</title>
+        <title>Team | GR8 Solutions</title>
+        <meta
+          name="description"
+          content="Vårt team är vår viktigaste tillgång. Kontakta oss idag!"
+        />
       </Head>
       <div className="w-full flex items-center justify-start flex-col 3xl:mt-[120px] md:mt-16 mt-12 3xl:gap-20 md:gap-16 gap-9">
         <div className="w-full flex items-start justify-center flex-col">

@@ -3,9 +3,9 @@ import Image from "next/image";
 // Components
 import ButtonBlack from "@/components/ui/buttons/buttonBlack";
 // images
-import Img from "@/public/assets/images/kommunikation/kommunikation.png";
+import Img from "@/public/assets/images/office_tjanster/office.png";
 
-const HeroKommunikation = () => {
+const HeroOfficeTjanster = () => {
   return (
     <div className="w-full flex items-stretch justify-center lg:flex-row flex-col lg:gap-16 gap-0 3xl:mb-44 md:mb-36 mb-24 3xl:mt-32 md:mt-20 mt-12">
       <div className="lg:w-1/2 w-full h-auto flex items-end justify-start flex-col lg:mb-0 mb-4">
@@ -20,16 +20,14 @@ const HeroKommunikation = () => {
       <div className="lg:w-1/2 w-full h-auto flex items-start justify-between flex-col 3xl:gap-0 gap-12">
         <div className="flex items-start justify-start flex-col">
           <h1 className="3xl:text-6xl md:text-4xl text-2xl font-medium text-black lg:block hidden 3xl:mb-7 mb-5">
-            KOMMUNIKATION
+            OFFICE-TJÄNSTER
           </h1>
           <p className="max-w-[40rem] 3xl:text-2xl text-lg font-light text-gray80 3xl:mb-12 mb-6">
-            Vi erbjuder ett brett utbud av lösningar för att hjälpa dig hålla
-            kontakten med dina kunder och kommunicera effektivt med dina
-            medarbetare. Från telefoni till e-post, chatt och videokonferens, vi
-            har det du behöver för att skapa en smidig och effektiv
-            kommunikation. Vi arbetar tätt med dig för att skapa en personlig
-            lösning som passar dina unika behov. Kontakta oss idag för att höra
-            mer om hur vi kan hjälpa dig att få det mesta ut av din verksamhet.
+            Vi strävar efter att leverera personlig service och vi arbetar nära
+            med våra kunder för att förstå deras unika behov och utveckla
+            lösningar som passar dem perfekt. Kontakta oss idag för att få mer
+            information om våra tjänster inom office och hur vi kan hjälpa dig
+            att hålla ordning på dina dokument, e-post och kalender.
           </p>
         </div>
 
@@ -43,4 +41,4 @@ const HeroKommunikation = () => {
   );
 };
 
-export default HeroKommunikation;
+export default HeroOfficeTjanster;

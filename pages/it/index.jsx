@@ -8,7 +8,8 @@ const IT = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | IT</title>
+        <title>IT | GR8 Solutions</title>
+        <meta name="description" content="Vår erfarna personal arbetar tätt med våra kunder för att säkerställa att deras IT-behov är tillfredsställda och att deras verksamhet kan köras så smidigt och säkert som möjligt." />
       </Head>
       <HeroIT />
       <ITServices />

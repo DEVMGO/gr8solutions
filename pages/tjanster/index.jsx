@@ -4,11 +4,12 @@ import Head from "next/head";
 import HeroServices from "@/components/tjanster/heroServices";
 import ListServices from "@/components/tjanster/listSevices";
 
-const tjanster = () => {
+const Tjanster = () => {
   return (
     <Fragment>
       <Head>
-        <title>GR8 | VÅRA TJÄNSTER</title>
+        <title>Tjänster | GR8 Solutions</title>
+        <meta name="description" content="GR8 Solutions erbjuder ett brett utbud av IT- och telekomtjänster för att hjälpa ditt företag att hålla sig uppkopplade och kommunicera effektivt." />
       </Head>
       <HeroServices />
       <ListServices />
@@ -16,6 +17,6 @@ const tjanster = () => {
   );
 };
 
-export default tjanster;
+export default Tjanster;
 
-tjanster.layout = "L1";
+Tjanster.layout = "L1";

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="w-full flex items-stretch justify-center lg:flex-row flex-col 3xl:mb-60 lg:mb-40 mb-24 3xl:gap-36 lg:gap-28">
       <div className="lg:w-1/2 w-full lg:order-1 order-2 h-auto flex items-start justify-between flex-col">
-        <Slide triggerOnce>
+        <Slide triggerOnce className="w-full">
           <p className="text-2xl font-medium text-black 3xl:mb-16 mb-10 lg:block hidden">
             DIN HELHETSPARTNER INOM TELEFONI & IT
           </p>
@@ -31,16 +31,16 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="w-full flex items-center justify-start gap-5">
+          <div className="w-full flex items-center md:justify-start justify-center gap-5">
             <ButtonBlack
-              link="kontakta_oss"
-              className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm 3xl:min-w-[14.8rem] min-w-[11rem]"
+              link="kontakta-oss"
+              className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm 3xl:min-w-[14.8rem] md:min-w-[11rem] min-w-[9rem]"
             >
               KONTAKTA OSS
             </ButtonBlack>
             <ButtonWhite
-              link="om_Oss"
-              className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm 3xl:min-w-[14.8rem] min-w-[11rem]"
+              link="om-oss"
+              className="3xl:max-w-[14.8rem] max-w-[11rem] 3xl:h-[4.5rem] h-14 3xl:text-lg text-sm 3xl:min-w-[14.8rem] md:min-w-[11rem] min-w-[9rem]"
             >
               OM OSS
             </ButtonWhite>

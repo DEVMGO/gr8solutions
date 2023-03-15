@@ -34,7 +34,7 @@ const HeroIT = () => {
         </div>
 
         <div className="w-full flex items-center justify-start gap-5">
-          <ButtonBlack className="3xl:max-w-[14.8rem] md:max-w-[11rem] w-full 3xl:h-[4.5rem] lg:h-14 h-12 lg:rounded-2xl rounded-3xl 3xl:text-lg text-sm">
+          <ButtonBlack link="/kontakta-oss" className="3xl:max-w-[14.8rem] md:max-w-[11rem] w-full 3xl:h-[4.5rem] lg:h-14 h-12 lg:rounded-2xl rounded-3xl 3xl:text-lg text-sm">
             KONTAKTA OSS
           </ButtonBlack>
         </div>
