@@ -53,12 +53,12 @@
 
 /* .teamCard {} */
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .teamCard {
     height: 400px;
   }
   .teamCard p {
-    font-size: clamp(0.7rem, .9vw, .9rem);
+    font-size: clamp(0.7rem, 2.1vw, 1.1rem);
   }
   .teamCard svg {
     width: clamp(.8rem, 1vw, 1rem);
