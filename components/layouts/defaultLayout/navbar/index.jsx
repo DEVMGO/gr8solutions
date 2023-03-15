@@ -81,22 +81,22 @@ const Navbar = () => {
       <div
         className={`${style.navbar} w-full flex items-center justify-center`}
       >
-        <div className="w-4/5 3xl:h-28 h-20 lg:flex hidden items-center justify-evenly bg-blue28 p-1 relative border-b border-gray-400">
+        <div className="w-4/5 3xl:h-28 h-20 lg:flex hidden items-center justify-evenly bg-blue28 px-1 relative border-b border-gray-400">
           <div className="w-1/2 flex items-center justify-start z-30">
             <Link href="/">
               <Image
                 src={Logo2}
                 alt="gr8 solutions"
-                className="3xl:w-44 md:w-36 3xl:h-12 h-10"
+                className="3xl:w-28 md:w-20 3xl:h-14 h-10"
               />
             </Link>
           </div>
 
-          <ul className="w-1/2 flex items-center justify-end 3xl:gap-16 md:gap-8">
+          <ul className="w-1/2 h-full flex items-center justify-end 3xl:gap-16 md:gap-8">
             {menuItems.map((item, index) => (
               <li
                 key={index + "navitems"}
-                className={`min-w-max relative`}
+                className={`h-full min-w-max flex items-center justify-center relative`}
                 onMouseEnter={() => handleChildren(index)}
                 onMouseLeave={() => setShowChildren(null)}
               >
@@ -104,14 +104,20 @@ const Navbar = () => {
                   <div>
                     <p className="3xl:text-lg text-base font-medium text-black flex items-center gap-2">
                       {item.title}{" "}
-                      {item.children.length > 0 && <FiChevronDown />}
+                      {item.children.length > 0 && (
+                        <FiChevronDown
+                          className={`${
+                            showChildren === index ? "rotate-180" : "rotate-0"
+                          } transition-all duration-200`}
+                        />
+                      )}
                     </p>
                   </div>
                 </Link>
 
                 {item.children.length > 0 && (
                   <ul
-                    className={`absolute w-full min-w-max z-40 bg-white flex items-start justify-center flex-col overflow-hidden ${
+                    className={`absolute top-full w-full min-w-max z-40 bg-white flex items-start justify-center flex-col overflow-hidden translate-y-0.5 ${
                       showChildren === index
                         ? "max-h-screen"
                         : " max-h-0 p-0 opacity-0"
@@ -169,7 +175,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`w-full h-screen bg-black bg-opacity-60 absolute left-0 top-0 p-0 ${
+          className={`w-full h-screen bg-black bg-opacity-60 fixed left-0 top-0 p-0 ${
             menu ? "max-w-full" : "max-w-0"
           } overflow-hidden transition-all duration-300 ease-in-out flex items-start justify-start flex-col`}
         >
@@ -202,7 +208,12 @@ const Navbar = () => {
                     </Link>
                     <p className="min-w-max text-lg font-medium text-black flex items-center">
                       {item.children.length > 0 && (
-                        <FiChevronDown onClick={() => handleChildren(index)} />
+                        <FiChevronDown
+                          onClick={() => handleChildren(index)}
+                          className={`${
+                            showChildren === index ? "rotate-180" : "rotate-0"
+                          } transition-all duration-200`}
+                        />
                       )}
                     </p>
                   </div>

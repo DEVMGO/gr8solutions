@@ -34,44 +34,56 @@ const Services = () => {
       </div>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">
-        <Fade triggerOnce delay={500}>
+        <Fade triggerOnce delay={500} className="h-full w-full">
           <CardServices
             icon={
               <UtökadTelefoni className="3xl:w-14 w-10 3xl:h-auto h-12 [&>path]:fill-blueCF" />
             }
+            title="Utökad Telefoni"
+            description="i erbjuder växlar och telefonilösningar för företag i alla storlekar. Vi ser till att växeln driftsätts, underhålls och fungerar exakt som önskat."
           />
         </Fade>
-        <Fade triggerOnce delay={500}>
+        <Fade triggerOnce delay={500} className="h-full w-full">
           <CardServices
             icon={
               <Kommunikation className="3xl:w-14 w-10 [&>path]:fill-blueCF" />
             }
+            title="Kommunikation"
+            description="Vi arbetar med några av de ledande operatörerna i Sverige för att erbjuda det bästa alternativet för våra kunder."
           />
         </Fade>
-        <Fade triggerOnce delay={500}>
+        <Fade triggerOnce delay={500} className="h-full w-full">
           <CardServices
             icon={<ITTjänster className="3xl:w-14 w-10 [&>path]:fill-blueCF" />}
+            title="IT-tjänster"
+            description="Vi samarbetar med företag som ser till att kundens IT är uppdaterad, molnbaserad och framför allt – säker!"
           />
         </Fade>
-        <Fade triggerOnce delay={1000}>
+        <Fade triggerOnce delay={1000} className="h-full w-full">
           <CardServices
             icon={
               <OfficeTjänster className="3xl:w-14 w-10 [&>path]:fill-blueCF" />
             }
+            title="Office-tjänster"
+            description="Vi hjälper dig med allt som har med officepaketet att göra, så att din kommunikation fungerar på ett sammanhållande och effektivt sätt."
           />
         </Fade>
-        <Fade triggerOnce delay={1000}>
+        <Fade triggerOnce delay={1000} className="h-full w-full">
           <CardServices
             icon={
               <Skrivarelösningar className="3xl:w-14 w-10 [&>path]:fill-blueCF" />
             }
+            title="Skrivarelösningar"
+            description="Vi byter ut, installerar och underhåller era maskiner, allt för att hitta den bästa lösningen till era behov."
           />
         </Fade>
-        <Fade triggerOnce delay={1000}>
+        <Fade triggerOnce delay={1000} className="h-full w-full">
           <CardServices
             icon={
               <GpsAndKörjournal className="3xl:w-14 w-10 [&>path]:fill-blueCF" />
             }
+            title="GPS & Körjournal"
+            description="Öka effektiviteten med elektroniska körjournaler. Uppfyll skatteverkets dokumentationskrav, samtidigt som ni sparar både tid och pengar!"
           />
         </Fade>
       </div>
