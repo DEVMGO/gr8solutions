@@ -16,6 +16,7 @@ const Navbar = () => {
   const pathname = useRouter().pathname;
   const [menu, setMenu] = useState(false);
   const [showChildren, setShowChildren] = useState(null);
+  const [newTitle, setNewTitle] = useState("");
   const handleChildren = (id) => {
     if (showChildren === id) {
       setShowChildren(null);
@@ -80,6 +81,22 @@ const Navbar = () => {
       children: [],
     },
   ];
+
+  // const text = "Hello, how are you?";
+  const targetLanguage = "sv"; // "sv" is the language code for Swedish
+
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${targetLanguage}&dt=t&q=${encodeURIComponent(
+    upTitle
+  )}`;
+
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      const translatedText = data[0][0][0];
+      // console.log(translatedText); // "Hej, hur mår du?"
+      setNewTitle(translatedText);
+    })
+    .catch((error) => console.error(error));
 
   return (
     <div className="w-full">
@@ -177,7 +194,16 @@ const Navbar = () => {
         <div className="w-full flex items-center justify-start">
           {/* <Link href="/"> */}
           <p className="text-lg text-black font-medium uppercase">
-            {pathname === "/" ? "HEM" : upTitle}
+            {pathname === "/" && "HEM"}
+            {pathname === "/blogg" && "BLOGG"}
+            {pathname === "/it" && "IT"}
+            {pathname === "/kommunikation" && "KOMMUNIKATION"}
+            {pathname === "/kontakta-oss" && "KONTAKTA OSS"}
+            {pathname === "/office-tjanster" && "OFFICE-TJÄNSTER"}
+            {pathname === "/om-oss" && "OM OSS"}
+            {pathname === "/team" && "TEAM"}
+            {pathname === "/telefoni" && "TELEFONI"}
+            {pathname === "/tjanster" && "VÅRA TJÄNSTER"}
           </p>
           {/* </Link> */}
         </div>
